@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/mainSetDateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set date"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="41dp" />
+
+        <Button
+            android:id="@+id/mainSetHourButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set time"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="132dp" />
+
+        <EditText
+            android:id="@+id/mainEstimatedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Estimated time in minutes"
+            android:inputType="numberSigned"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="222dp" />
+
+        <CheckBox
+            android:id="@+id/mainRecurringCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:text="Repeat every day ?"
+            tools:layout_editor_absoluteX="117dp"
+            tools:layout_editor_absoluteY="310dp" />
+
+        <Button
+            android:id="@+id/mainAddToCalendarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to calendar"
+            tools:layout_editor_absoluteX="119dp"
+            tools:layout_editor_absoluteY="376dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
